@@ -1,0 +1,146 @@
+/* ボディカラー */
+body {
+  background-color: #E7DACB;
+  z-index: 10;
+}
+
+/* ==========
+  ヘッダー
+  ======== */
+header {
+  background-color: white;
+  z-index: 11;
+  background-position: top;
+  margin: -10px;
+  width: 100%;
+  height: 100px;
+  border-radius: 0 0 80px 80px;
+  position: relative;/* 追加でスクロール位置もしたい */
+}
+
+/* びっくりドンキーのロゴ */
+#logo {
+  width: 180px;
+  position: absolute;
+  top: 15px;
+  left: 80px;
+}
+
+/* ナビ　採用情報 */
+#saiyou {
+  position: absolute;
+  right: 80px;
+}
+.nav {
+  font-size: 25px;
+  display: inline-block;
+  margin-left: 20px;
+}
+#saiyou>a {
+  text-decoration: none; /* リンクの下線消し */
+}
+#saiyou>a :link{ /* 未訪問リンクの色 */
+  color: red;
+}
+#saiyou>a :visited{ /* 訪問済みのリンクの色 */
+  color: blue;
+}
+#saiyou p:nth-of-type(1){ /* 「店舗別／採用情報　＞」のみ太字 */
+  font-weight: bold;
+}
+
+/* ========
+  メイン
+  ====== */
+/* あなたも･･･（キャッチフレーズ） */
+h1{
+  text-align: center;
+  margin: 80px 0;
+}
+
+/* メニュー ＋ 緑背景 */
+#haikei{
+  display: flex;
+  position: relative;/* 親 */
+}
+/* メニュー */
+#menu{
+  background-color: white;
+  width: 60%;
+  height: 300px;
+  z-index: 11;
+  border-radius: 0 400px 0 0;
+}
+#menu-img{
+  margin-top: 40px;
+  margin-left: 30px;
+  width: 50%;
+}
+#menu-list{
+  font-size: 25px;
+  margin-left: 30px;
+  text-decoration: none; /*できない？*/
+}
+
+/* 緑背景 */
+#back{
+  position: absolute;/* 小 */
+  right: 0;
+  width: 45%;
+  z-index: 12;
+}
+#back-green{
+  width: 100%;
+  height: 300px;
+  border-radius: 400px 0 0 0;
+}
+
+/* アルバイト情報 */
+#baito-point{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#point1{
+  background-image: url(images/red_circle.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 20%;
+}
+#point2{
+  background-image: url(images/blue_circle.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 20%;
+}
+#point3{
+  background-image: url(images/orange_circle.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 20%;
+}
+#point4{
+  background-image: url(images/yellow_circle.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 20%;
+}
+#point5{
+  width: 20%;
+  background-image: url(images/green_circle.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 20%;
+}
+h3{
+  text-align: center;
+  font-size: 25px;
+  margin: 100px 0 200px 0;/* 文字を真ん中に持って行きたい */
+}
+
+/* クリックした後 */
+#clickafter {
+  background-color: pink;
+  background-size: 100;
+}
